@@ -159,12 +159,15 @@ body{
 
     &:hover{
         text-decoration-line: underline;
-        border-bottom: 2px solid $thevisualx-black
+        border-bottom: 2px solid $thevisualx-black;
+    }
+    &:visited{
+        text-decoration: none;
     }
 }
 .active{
-    text-decoration-line:underline;
-    border-bottom: 2px solid $thevisualx-blue;
+    text-decoration-line: underline;
+    border-bottom: 2px solid $thevisualx-black;
     background: $thevisualx-blue;
     color: $thevisualx-white;
 }

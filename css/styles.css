@@ -159,6 +159,9 @@ body {
   text-decoration-line: underline;
   border-bottom: 2px solid #141414;
 }
+.link:link {
+  text-decoration: none;
+}
 .link:visited {
   text-decoration: none;
 }
@@ -172,7 +175,16 @@ body {
 
 .ext_link {
   text-decoration-line: underline;
+  color: #141414;
   font-weight: 600;
+}
+.ext_link:link {
+  text-decoration: underline;
+  color: #141414;
+}
+.ext_link:visited {
+  text-decoration: underline;
+  color: #141414;
 }
 .ext_link:hover {
   color: #80862D;

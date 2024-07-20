@@ -161,6 +161,9 @@ body{
         text-decoration-line: underline;
         border-bottom: 2px solid $thevisualx-black;
     }
+    &:link{
+        text-decoration: none;
+    }
     &:visited{
         text-decoration: none;
     }
@@ -173,7 +176,17 @@ body{
 }
 .ext_link{
     text-decoration-line: underline;
+    color: $thevisualx-black;
     font-weight: 600;
+    &:link{
+        text-decoration: underline;
+        color: $thevisualx-black;
+    }
+    &:visited{
+        text-decoration: underline;
+        color: $thevisualx-black;
+    }
+        
     &:hover{
         color: $thevisualx-green;
     }

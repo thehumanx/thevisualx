@@ -161,13 +161,12 @@ body{
         text-decoration-line: underline;
         border-bottom: 2px solid $thevisualx-black
     }
-
-    &:active{
-        text-decoration-line:underline;
-        border-bottom: 2px solid $thevisualx-blue;
-        background: $thevisualx-blue;
-        color: $thevisualx-white;
-    }
+}
+.active{
+    text-decoration-line:underline;
+    border-bottom: 2px solid $thevisualx-blue;
+    background: $thevisualx-blue;
+    color: $thevisualx-white;
 }
 .ext_link{
     text-decoration-line: underline;

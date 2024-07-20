@@ -11,20 +11,19 @@
     <link rel = "stylesheet" href = "css/reset.css">
     <link rel = "stylesheet" href="css/styles.css">
     <link rel="canonical" href="https://www.thevisualx.design/">
-
 </head>
 
 <body>
-<div class ="header">
+<div class ="header" id="header">
     <div class = "brand">thevisualx.design</div>
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design">Home</a> 
+    <a class ="link active" href="https://thevisualx.design" >Home</a> 
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/works">Works</a>
+    <a class ="link" href="/pages/Works.html">Works</a>
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/articles">Articles</a> 
+    <a class ="link" href="/pages/Works.html">Articles</a> 
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/about">About</a> 
+    <a class ="link" href="/pages/About.html">About</a> 
 </div>
 <div class="content">
     <div class = "introduction">
@@ -51,22 +50,37 @@
     </div>
 </div>
 <div class = "footer_links">
-    <a class ="link" href="https://thevisualx.design">LinkedIn</a> 
+    <a class ="link" href="https://www.linkedin.com/in/thehumanx/" target="_blank">LinkedIn</a> 
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/works">Dribbble</a>
+    <a class ="link" target="_blank" href="https://dribbble.com/thehumanx/collections/5226969-Projects-at-Leapfrog">Dribbble</a>
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/articles">Github</a> 
+    <a class ="link" target="_blank" href="https://github.com/thehumanx">Github</a> 
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/about">Instagram</a>
+    <a class ="link" target="_blank" href="https://instagram.com/iambishistha">Instagram</a>
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/about">Behance</a>
+    <a class ="link" target="_blank" href="https://www.behance.net/thehumanx">Behance</a>
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/about">Email</a>
+    <a class ="link" target="_blank" href="mailto:hello@thevisualx.design">Email</a>
     <div class = "line_vertical"></div>
-    <a class ="link" href="https://thevisualx.design/about">Resume</a>
+    <a class ="link" href="/files/Resume_Bibek.pdf" target="_blank">Resume</a>
 </div>
 <div class="footer_info">
     Copyright ©️2024 Bibek Shrestha | thevisualx.design
 </div>
+<script>
+    var btnContainer = document.getElementById("header");
+
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("link");
+
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
+</script>
 </body>
     </html>

@@ -159,7 +159,8 @@ body {
   text-decoration-line: underline;
   border-bottom: 2px solid #141414;
 }
-.link:active {
+
+.active {
   text-decoration-line: underline;
   border-bottom: 2px solid #001685;
   background: #001685;

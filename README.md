@@ -1,15 +1,11 @@
 # thevisualx.design
 A portfolio site for Bibek Shrestha
 
+###Changelog v1.1 [December 24, 2024]
 
-### Changelog v1 [July 23, 2024]
-- Initial build
-- Minimum Usable Product (MUP) approach
-- Navigation links redirects to external website
+- Updated the new working location as I switched company
+- Updated resume to reflect the same
 
-> #### Upcoming enhancements
-> - Dedicated 'Works' and 'Articles' sections on homepage
-> - Dedicated 'Works', 'Articles' and 'About' page
-> - Micro-animation & transitions effects
-> - Structured content layout
->
+> ###Upcoming enhancements
+> - Redesign of the homepage
+> - Dedicated sections and pages for each navigation links

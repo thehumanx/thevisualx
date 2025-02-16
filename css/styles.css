@@ -173,6 +173,8 @@ body {
   align-self: stretch;
   padding: 48px;
   border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  min-width: none;
 }
 
 .view_all_button {
@@ -313,10 +315,10 @@ body {
     gap: 32px;
   }
   .copy p:nth-of-type(1) {
-    font-size: 48px;
+    font-size: 32px;
   }
   .copy p:nth-of-type(2) {
-    font-size: 24px;
+    font-size: 16px;
   }
   .cta {
     height: 60px;
@@ -341,7 +343,6 @@ body {
     flex-direction: column;
     height: auto;
     position: relative;
-    max-width: 100%;
     padding: 0;
   }
   .brand {
@@ -375,15 +376,21 @@ body {
     justify-content: left;
     padding: 12px 32px;
   }
+  .section {
+    padding: 12px;
+    width: 100%;
+  }
   .footer_links {
     flex-direction: column;
     height: auto;
     border-top: 2px solid #E6E6E6;
+    font-size: 12px;
   }
   .footer_info {
     text-wrap: wrap;
     padding: 12px 32px;
     line-height: 100%;
     text-align: center;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=styles.css.map */

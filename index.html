@@ -113,15 +113,14 @@
             flex-wrap: wrap;
             gap: 16px;
             justify-content: center; /* Center the posts */
-            width: 100%;
+            width: auto;
         }
         .instagram-post, .blog-post {
             position: relative;
             flex: 1 1 calc(33.333% - 16px);
             box-sizing: border-box;
             overflow: hidden;
-            min-width: 400px; /* Minimum width of 400px */
-            height: 400px; /* Fixed height for blog posts */
+            height: auto; /* Fixed height for blog posts */
         }
         .post-image, .blog-post img {
             width: 100%;
@@ -175,14 +174,13 @@
         /* Media query for responsiveness */
         @media (max-width: 1200px) {
             .instagram-post, .blog-post {
-                flex: 1 1 calc(50% - 10px); /* Two columns on medium screens */
+                flex: 1 1 calc(50% - 16px); /* Two columns on medium screens */
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 780px) {
             .instagram-post, .blog-post {
-                flex: 1 1 calc(100% - 10px); /* One column on small screens */
-                min-width: auto; /* Remove min-width on small screens */
+                flex: 1 1 calc(100% - 16px); /* One column on small screens */
             }
         }
     </style>

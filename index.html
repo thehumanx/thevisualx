@@ -79,41 +79,6 @@
         </div>
     </div>
     <div class="section">
-        <div class="section_title">Recent Instagram Posts</div>
-        <div id="instagram-posts" class="instagram-posts"></div>
-        <script>
-            fetch('/api/instagram-token')
-                .then(response => response.json())
-                .then(config => {
-                    const token = config.instagramAccessToken;
-                    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,timestamp&limit=9&access_token=${token}`;
-                    fetch(url)
-                        .then(response => response.json())
-                        .then(data => {
-                            const postsContainer = document.getElementById('instagram-posts');
-                            data.data.forEach(post => {
-                                if (post.media_type === 'IMAGE' || post.media_type === 'CAROUSEL_ALBUM') {
-                                    const postElement = document.createElement('div');
-                                    postElement.classList.add('instagram-post');
-                                    const caption = post.caption.length > 200 ? post.caption.substring(0, 200) + '...' : post.caption;
-                                    postElement.innerHTML = `
-                                        <a href="${post.permalink}" target="_blank">
-                                            <div class="post-image" style="background-image: url('${post.media_url}');"></div>
-                                            <div class="post-overlay">
-                                                <p>${new Date(post.timestamp).toLocaleDateString()}</p>
-                                                <p>${caption}</p>
-                                            </div>
-                                        </a>
-                                    `;
-                                    postsContainer.appendChild(postElement);
-                                }
-                            });
-                        })
-                        .catch(error => console.error("Error fetching Instagram posts:", error));
-                });
-        </script>
-    </div>
-    <div class="section">
         <div class="section_title">Personal Blabbers</div>
         <div id="blog-feed" class="blog-posts"></div>
 
@@ -239,7 +204,7 @@
         <a class ="link" href="/files/Resume_Bibek.pdf" target="_blank">Resume</a>
     </div>
     <div class="footer_info">
-        <a class ="ext_link" href="https://github.com/thehumanx/thevisualx/releases/" target="_blank">v1.1 - Website in progress</a> &nbsp;●&nbsp;Copyright&nbsp;<span id="current-year"></span>,&nbsp;Bibek Shrestha 
+        <a class ="ext_link" href="https://github.com/thehumanx/thevisualx/releases/" target="_blank">v1.2 - Website in progress</a> &nbsp;●&nbsp;Copyright&nbsp;<span id="current-year"></span>,&nbsp;Bibek Shrestha 
         <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
     </div>
 </div>
